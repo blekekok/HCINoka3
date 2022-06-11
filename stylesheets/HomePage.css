@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Raleway', sans-serif; */
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: var(--Desaturated--blue);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration:none ;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+#brand{
+    padding: 0px 0px 0px 10px;
+}
+
+.nav-icon{
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+header .nav-item a:hover{
+    color: var(--Dark--blue);
+}
