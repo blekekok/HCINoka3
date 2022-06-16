@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 
 :root {
-  --white: #FFF;
-  --whitesmoke: #F9F9F9;
   --light-grey: #ECECEC;
   --grey: #C4C4C4;
   --medium-grey: #A7A7A7;
   --deep-grey: #343434;
-  --black: #000000;
-  --blue: #1B77F3;
-  --red: #CF3C3F;
   --Pale--blue: hsl(225, 100%, 94%);
   --Bright--blue: rgb(56, 41, 224);
   --Very--pale--blue: hsl(225, 100%, 98%);
@@ -46,7 +41,6 @@ main {
     width: 100%;
     max-width: 500px;
     min-height: 100vh;
-    /* padding: clamp(35px, 8%, 70px); */
     padding: 70px 70px 35px 70px;
 }
 
@@ -130,7 +124,7 @@ main {
 }
 
 .login_icon .button_icon:nth-child(1) {
-  background-color: var(--blue);
+  background-color: blue;
 }
 
 .login_icon .button_icon:nth-child(2) {
@@ -138,7 +132,7 @@ main {
 }
 
 .login_icon .button_icon:nth-child(3) {
-  background-color: var(--black);
+  background-color: black;
 }
 
 .login--checkbox {
@@ -183,7 +177,6 @@ main {
     width: 60px;
     height: 60px;
     padding: 20px;
-    /* background-color: var(--red); */
     border-radius: 20px;
     margin-bottom: 60px;
     margin-left: 30px;
