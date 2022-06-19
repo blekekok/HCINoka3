@@ -38,10 +38,6 @@ a{
     text-decoration:none ;
 }
 
-body{
-    background-color: var(--secondary--color);
-}
-
 .navbar{
     min-height: 70px;
     display: flex;

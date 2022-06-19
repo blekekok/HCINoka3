@@ -60,6 +60,7 @@ main {
     border-radius: 3rem;
     margin-top: -100px;
     width: 200px;
+    cursor: pointer;
     /* margin-bottom: 10px; */
 }
 
