@@ -26,9 +26,10 @@ main {
 }
 
 .wallpaper{
-    background-image: url('/HCINoka3/resource/banner.jpg');
+    background-image: url('/HCINoka3/resource/homePart/bg.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     flex: 1;
 }

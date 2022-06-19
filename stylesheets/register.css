@@ -11,6 +11,7 @@
   --Desaturated--blue: hsl(224, 23%, 55%);
   --Dark--blue: hsl(223, 47%, 23%);
   --purple--:rgb(94, 94, 236);
+  --theme--color:rgb(15, 52, 67);
 }
 
 *{
@@ -23,14 +24,17 @@
 main {
   display: flex;
   height: 100vh;
+  background-color:var(--theme--color);
+  color: white;
 }
 
 .wallpaper{
-    background-image: url('/HCINoka3/resource/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    flex: 1;
+  background-image: url('/HCINoka3/resource/homePart/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  flex: 1;
 }
 
 .login {
@@ -55,13 +59,13 @@ main {
 .login_brand{
     border-radius: 3rem;
     width: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .login_text{
-    color: black;
+    color:white;
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .login_input{
