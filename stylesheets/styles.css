@@ -14,6 +14,9 @@
   --purple--:rgb(94, 94, 236);
   --theme--color:rgb(15, 52, 67);
   --secondary--color: rgb(67, 198, 172);
+
+  --line-size: 1px;
+  --line-color: #7a7a7a;
 }
 
 html {
@@ -39,6 +42,7 @@ header {
     padding: 24px;
     background-color: var(--theme--color);
     color: white;
+    box-sizing: border-box;
 }
 
 .noka-logo img {
@@ -55,6 +59,9 @@ nav {
 
 nav a {
     font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -135,12 +142,18 @@ footer {
 
 .footer-icon {
     width: 300px;
-    margin-top: 24px;
+    margin-top: 28px;
 }
 
 .media-wrapper {
     display: flex;
     gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.media-wrapper li {
+    list-style: none;
 }
 
 .media-wrapper img {
@@ -150,4 +163,10 @@ footer {
 
 .copyright-text {
     color: #fff;
+}
+
+.line-vertical {
+    height: 100%;
+    width: var(--line-size);
+    background-color: var(--line-color);
 }
