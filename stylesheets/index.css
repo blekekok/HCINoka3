@@ -68,3 +68,9 @@ h1 {
     filter: none;
     background-color: var(--theme--color);
 }
+
+@media only screen and (max-width: 800px) {
+    .background-buttons {
+        flex-direction: column;
+    }    
+}

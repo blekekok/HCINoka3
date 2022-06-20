@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/index.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/heroes.css">
     <title>Heroes</title>
@@ -30,10 +29,99 @@
     </header>
 
     <div class="content">
+        <div class="heading">
+            <h1>Choose Your Hero!</h1>
+        </div>
+
         <div class="hero-list">
+            <div class="group-buttons">
+                <label for="hero-all" id="hero-link-all">
+                    <span>ALL</span>
+                </label>
+                <label for="hero-str" id="hero-link-str">
+                    <img src="resource/heroPart/hero_strength.png" alt="">
+                </label>
+                <label for="hero-agi" id="hero-link-agi">
+                    <img src="resource/heroPart/hero_agility.png" alt="">
+                </label>
+                <label for="hero-int" id="hero-link-int">
+                    <img src="resource/heroPart/hero_intelligence.png" alt="">
+                </label>
+            </div>
             <ul class="heroes">
-                <li>
-                    
+                <input type="radio" name="hero-type" id="hero-all" checked>
+                <input type="radio" name="hero-type" id="hero-str">
+                <input type="radio" name="hero-type" id="hero-agi">
+                <input type="radio" name="hero-type" id="hero-int">
+
+                <li class="int">
+                    <div class="hero-main-info">
+                        <img src="resource/heroPart/hero1.jpeg" alt="">
+                        <div class="hero-name">
+                            <span>Hyden Stagg</span>
+                        </div>
+                    </div>
+                    <div class="hero-secondary-info">
+                        <img src="resource/heroPart/hero_intelligence.png" alt="">
+                        <div>
+                            <span>ATK</span>
+                            <span>70</span>
+                        </div>
+                        <div>
+                            <span>AGI</span>
+                            <span>80</span>
+                        </div>
+                        <div>
+                            <span>INT</span>
+                            <span>90</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="agi">
+                    <div class="hero-main-info">
+                        <img src="resource/heroPart/hero2.jpeg" alt="">
+                        <div class="hero-name">
+                            <span>Johnny Dogs</span>
+                        </div>
+                    </div>
+                    <div class="hero-secondary-info">
+                        <img src="resource/heroPart/hero_agility.png" alt="">
+                        <div>
+                            <span>ATK</span>
+                            <span>90</span>
+                        </div>
+                        <div>
+                            <span>AGI</span>
+                            <span>80</span>
+                        </div>
+                        <div>
+                            <span>INT</span>
+                            <span>70</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="str">
+                    <div class="hero-main-info">
+                        <img src="resource/heroPart/hero3.jpeg" alt="">
+                        <div class="hero-name">
+                            <span>Christine</span>
+                        </div>
+                    </div>
+                    <div class="hero-secondary-info">
+                        <img src="resource/heroPart/hero_strength.png" alt="">
+                        <div>
+                            <span>ATK</span>
+                            <span>90</span>
+                        </div>
+                        <div>
+                            <span>AGI</span>
+                            <span>80</span>
+                        </div>
+                        <div>
+                            <span>INT</span>
+                            <span>70</span>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
