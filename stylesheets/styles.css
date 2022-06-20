@@ -71,6 +71,7 @@ nav a:hover {
 .nav-items {
     display: flex;
     gap: 24px;
+    padding: 0;
 }
 
 .nav-items li {
@@ -98,35 +99,6 @@ nav a:hover {
 #burger-button:hover img {
     filter: brightness(80%);
     cursor: pointer;
-}
-
-@media only screen and (max-width: 800px) {
-    nav {
-        position: absolute;
-        width: 100%;
-        top: 100%;
-        left: 0;
-        background-color: var(--theme--color);
-        flex-direction: column-reverse;
-        gap: 10px;
-        overflow: hidden;
-        max-height: 0;
-    }
-
-    #nav-burger:checked + nav {
-        padding: 10px;
-        max-height: calc(2 * 100vh);
-    }
-
-    .nav-items {
-        flex-direction: column;
-        margin: 10px 0;
-        gap: 32px;
-    }
-
-    #burger-button {
-        display: block;
-    }
 }
 
 footer {
@@ -169,4 +141,41 @@ footer {
     height: 100%;
     width: var(--line-size);
     background-color: var(--line-color);
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: var(--theme--color);
+        flex-direction: column-reverse;
+        gap: 10px;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    #nav-burger:checked + nav {
+        padding: 10px;
+        max-height: calc(2 * 100vh);
+    }
+
+    .nav-items {
+        flex-direction: column;
+        margin: 10px 0;
+        gap: 32px;
+    }
+
+    #burger-button {
+        display: block;
+    }
+
+    footer > a {
+        display: none;
+    }
+
+    .media-wrapper {
+        justify-content: center;
+    }
 }

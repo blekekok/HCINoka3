@@ -29,15 +29,16 @@
     flex-direction: column;
     margin: 12px 0;
     width: 100%;
+    gap: 24px;
 }
 
 .esport-event {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
-    border-top: 2px;
-    border-bottom: 2px;
+    padding: 20px 0;
+    gap: 20px;
+    border-width: 2px 0;
     border-style: solid;
     border-color: var(--theme--color);
     color: #fff;
@@ -48,11 +49,16 @@
 }
 
 .esport-event .avenue-text {
+    display: flex;
+    justify-content: center;
+    flex: 1;
     text-align: center;
+    font-size: 24px;
 }
 
 .esport-event .event-schedule {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
 }
@@ -81,6 +87,11 @@
     font-size: 32px;
 }
 
+.esport-event .team-wrapper {
+    display: flex;
+    flex: 1;
+}
+
 @media only screen and (max-width: 800px) {
     .heading span {
         display: none;
@@ -88,5 +99,22 @@
 
     .heading .line-vertical {
         display: none;
+    }
+
+    .esport-event {
+        flex-direction: column;
+    }
+
+    .esport-event .teams {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .esport-event .team-wrapper:first-child {
+        justify-content: flex-end;
+    }
+
+    .esport-event .team-wrapper:last-child {
+        justify-content: flex-start;
     }
 }
