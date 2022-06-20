@@ -24,23 +24,61 @@
     font-size: 28px;
 }
 
-.team-showcase {
+.esport-showcase {
     display: flex;
     flex-direction: column;
     margin: 12px 0;
     width: 100%;
 }
 
-.teams {
+.esport-event {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
     border-top: 2px;
     border-bottom: 2px;
     border-style: solid;
     border-color: var(--theme--color);
+    color: #fff;
 }
 
-.team-wrapper img {
+.esport-event .team-wrapper img {
     height: 50px;
+}
+
+.esport-event .avenue-text {
+    text-align: center;
+}
+
+.esport-event .event-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.esport-event .event-schedule * {
+    margin: 0;
+}
+
+.esport-event .team-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.esport-event .team-wrapper span {
+    font-size: 28px;
+}
+
+.esport-event .teams {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.esport-event .teams > span {
+    font-size: 32px;
 }
 
 @media only screen and (max-width: 800px) {
