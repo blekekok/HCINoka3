@@ -124,9 +124,15 @@
     height: 36px;
     border-radius: 25px;
     cursor: pointer;
+    border: solid 2px #fff;
+    padding: 4px;
 }
 
 .group-buttons img {
     width: 36px;
     height: 36px;
+}
+
+.group-buttons label:hover {
+    filter: brightness(80%);
 }
