@@ -29,7 +29,7 @@ main {
 }
 
 .wallpaper{
-  background-image: url('/HCINoka3/resource/homePart/bg.jpg');
+  background-image: url('../resource/homePart/bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -182,8 +182,8 @@ main {
     justify-content: center;
     cursor: pointer;
     border: none;
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
     padding: 20px;
     border-radius: 20px;
     margin-bottom: 100px;

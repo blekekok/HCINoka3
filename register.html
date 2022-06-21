@@ -1,85 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Us</title>
-    <link rel="stylesheet" href="stylesheets/register.css">
-</head>
-<body>
-  
-    <main>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Join Us</title>
+        <link rel="stylesheet" href="stylesheets/register.css" />
+    </head>
+    <body>
+        <main>
+            <form class="login" onsubmit="return validateForm()">
+                <div class="container">
+                    <img src="resource/noka3.png" class="login_brand" a href="index.html" />
 
-        <!-- <script src="scripts/login.js"></script> -->
-        
-        <section class="login">
-    
-          <div class="container">
+                    <h1 class="login_text">Join Us</h1>
 
+                    <label class="login_input">
+                        <span>Enter your name</span>
+                        <input type="text" name="name" class="input" id="name-input"/>
+                    </label>
 
-            <img src="resource/noka3.png" class="login_brand" a href="index.html">
-    
-            <h1 class="login_text">Join Us</h1>
+                    <label class="login_input">
+                        <span>Enter your Email</span>
+                        <input type="text" name="username" class="input" id="email-input"/>
+                    </label>
 
-            <label class="login_input">
-                <span>Enter your name</span>
-                <input type="text" name="username" class="input">
-              </label>
+                    <label class="login_input">
+                        <span>Enter your Password</span>
+                        <input type="password" name="password" class="input" id="password-input"/>
+                    </label>
 
+                    <label class="login_input">
+                        <span>Confirm your password</span>
+                        <input type="password" name="password" class="input" id="confirm-input"/>
+                    </label>
 
-            <label class="login_input">
-              <span>Enter your Email</span>
-              <input type="text" name="username" class="input">
-            </label>
-      
-            <label class="login_input">
-              <span>Enter your Password</span>
-              <input type="password" name="password" class="input">
-            </label>
-      
-            <label class="login_input">
-              <span>Enter your Gender</span>
-              <input type="password" name="password" class="input">
-            </label>
+                    <div class="login_icon">
+                        <button type="button" class="button_icon">
+                            <img src="resource/facebook-icon.png" alt="fb" />
+                        </button>
 
+                        <button type="button" class="button_icon">
+                            <img src="resource/google-icon.png" alt="google" />
+                        </button>
 
-            <div class="login_icon">
-              <button type="button" class="button_icon">
-                <img src="resource/facebook-icon.png" alt="fb">
-              </button>
-      
-              <button type="button" class="button_icon">
-                <img src="resource/google-icon.png" alt="fb">
-              </button>
-      
-              <button type="button" class="button_icon">
-                <img src="resource/apple-icon.png" alt="fb">
-              </button>
-            </div>
+                        <button type="button" class="button_icon">
+                            <img src="resource/apple-icon.png" alt="apple" />
+                        </button>
+                    </div>
 
-            <label class="login--checkbox">
-              <input type="checkbox" class="input--checkbox">
-               agree with terms and condition
-            </label>
+                    <label class="login--checkbox">
+                        <input type="checkbox" class="input--checkbox" id="tos-input"/>
+                        agree with terms and condition
+                    </label>
+                </div>
 
-          </div>
+                <div class="wrapper">
+                    <button type="submit" class="button_login">
+                        <p>
+                            <i class="arrow right"></i>
+                        </p>
+                    </button>
+                </div>
+            </form>
 
-          <div class="wrapper">
-            <button type="button" class="button_login" disabled>
-                <p>
-                    <i class="arrow right"></i>
-                </p>
-            </button>
-    
-          </div>
-    
-        </section>
-    
-        <section class="wallpaper"></section>
-      </main>
+            <section class="wallpaper"></section>
+        </main>
 
-      <script src="scripts/login.js"></script>
-    
-</body>
+        <script src="scripts/register.js"></script>
+    </body>
 </html>
